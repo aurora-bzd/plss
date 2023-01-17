@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Oiee</title>
+<style>
+p {
+text-align: center;
+font-size: 32px;
+font-family: Candara, Oswald;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 25%;
+}
+</style>
+</head>
+<body>
+<p>Você quer sair comigo?</p>
+<img src="https://media.tenor.com/PLeCIPCn39cAAAAC/gato-por-favor.gif"> 
+</body>
+<title>Botões</title>
+<style>
+#botao1 {
+position: fixed;
+top: 70%;
+left: 55%;
+transform: translate(-50%, -50%);
+}
+#botao2 {
+position: absolute;
+ left: 39%;
+  top: 68%;
+}
+</style>
+</head>
+<body>
+<button id="botao1">SIMM :D </button>
+<button id="botao2">NÃO :( </button>
+<script>
+const button2 = document.getElementById('botao2');
+let left = 40;
+button2.addEventListener('mouseover', function() {
+  if(left == 40){
+    left = 44;
+  }else{
+    left = 40;
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+<script>document.getElementById('botao1').addEventListener('click', function() {
+alert('EBAAA <33');
+});
+</script>
+</body>
+</html>
